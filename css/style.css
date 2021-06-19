@@ -1,0 +1,461 @@
+/*Navbar y home page*/
+html{
+    scroll-behavior: smooth;
+}
+
+
+.hero{
+    margin: auto;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.app-color{
+    background-color: #FF8333;
+}
+
+#iphone{
+    margin-top: 16vh;
+}
+
+/* Fin Navbar y home page*/
+
+/*Barra de scrool*/
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #FF8333;
+    border-radius: 2rem;
+}
+
+
+/*fin barra de scroll*/
+
+
+/*Seccion about mobile*/
+
+.seccion-mobile-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mobile-reserve {
+    background-image: url("../img/About_Mobile/reserveXl.png");
+    background-position-x: 29%;
+    background-position-y: 8%;
+    background-size: 54% 80%;
+    background-repeat: no-repeat;
+}
+
+blockquote {
+    border-left: 5px solid #FF8333;
+}
+
+
+/*fin seccion about mobile*/
+
+
+/*seccion de about call*/
+
+.about-call {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 992px) {
+    .about-description {
+        margin-top: 5%;
+    }
+}
+
+
+/*fin about call*/
+
+.divShadow {
+    -webkit-box-shadow: 0px 3px 43px 4px rgba(255,150,6,1);
+    -moz-box-shadow: 0px 3px 43px 4px rgba(255,150,6,1);
+    box-shadow: 0px 3px 43px 4px rgba(255,150,6,1);
+}
+
+
+/*Parte de Seccion_Student*/
+
+
+/*inicio seccion usuarios*/
+h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  font-size: 50px;
+  margin: 50px 0px;
+}
+
+ .usuarios {
+  margin: 50px 0px;
+} 
+
+ .contenedor {
+  width: 1200px;
+  margin: 0 auto;
+} 
+
+.tipo-usuarios {
+   display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.tipo-usuarios div {
+  color: white;
+  max-width: 350px;
+  padding: 50px;
+  background-color: #ff8333;
+  height: 100%;
+  border-radius: 25px;
+   margin: 80px 20px 0px 20px; 
+}
+
+.tipo-usuarios div * {
+   margin: 10px 0px 10px 0px; 
+}
+
+.tipo-usuarios p {
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+
+.tipo-usuarios img {
+  max-width: 150px;
+  border-radius: 10000px;
+  margin: -130px auto 20px auto;
+  box-shadow: 0px 0px 25px -10px black;
+}
+/*fin usuarios*/
+
+
+
+
+/*Parte de Seccion Mision y Vision*/
+
+@media screen and (min-width: 992px) {
+    .mision {
+        transform: translateX(40px);
+    }
+    .vision {
+        transform: translateX(-40px);
+    }
+    .info-mi-vi {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .mision {
+        margin-top: 20px;
+    }
+    .info-mi-vi {
+        font-size: 1.1rem;
+    }
+}
+
+.seccion_MisionYVision {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/comprando-online.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    font-weight: bold;
+}
+
+.mision {
+    position: relative;
+}
+
+.vision {
+    position: relative;
+}
+
+.seccion_MisionYVision:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background: rgba(34, 40, 49, 0.5);*/
+    background-image: radial-gradient( rgba(255, 255, 255, 0.1), rgba(50, 50, 50, 0.8) 60%);
+    /*background-image: linear-gradient(*/
+    /*rgba(255, 255, 255, 0.1),*/
+    /*rgba(34, 40, 49, 1)*/
+    /*);*/
+}
+
+.circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #FF8333;
+    border-radius: 50%;
+}
+
+.circulo:after {
+    content: "";
+    padding-bottom: 100%;
+}
+
+.mision-vision-content {
+    display: flex;
+    align-items: center;
+}
+
+.info-mi-vi {
+    color: white;
+}
+
+
+/*Fin de Misión y vision*/
+
+/*INICIO DE integrantes y sobre nosotros*/
+
+/* nsootros */
+.nosotros-seccion{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parrafo{
+    margin-bottom: 20px;
+}
+
+/*integrantes*/
+/*integrantes*/
+.integrantes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #f2f2f2;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.integrantes figure {
+  position: relative;
+  height: 250px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.integrantes figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  object-fit: cover;
+  margin-bottom: 20px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.integrantes figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(200, 100, 50, 0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.integrantes figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.integrantes figure:hover > .capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.integrantes figure .capa h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 300px;
+}
+
+.integrantes figure .capa p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+/*Fin de NOSOTROS*/
+
+
+/*
+*! Suscripciones
+*/
+
+.h2Plan {
+    text-align: center;
+    color: black;
+    margin-left: 0%;
+}
+
+.card-content {
+    background-color: rgb(255, 255, 255);
+    border-color: #269aff;
+    border: radius 25px;
+}
+
+.card-title {
+    color: black;
+}
+
+#timePlan {
+    color: rgb(133, 125, 125);
+    margin-left: 5%;
+}
+
+.collection-item {
+    color: black;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+@media (min-width: 993px) {
+    #dvPlan1 {
+        padding-right: 0%;
+        padding-top: 15%;
+    }
+    #dvImportant {
+        padding-right: 0%;
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    #dvPlan3 {
+        padding-left: 0%;
+        padding-top: 15%;
+    }
+    #ftr {
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 20%;
+    }
+}
+
+#btnPlan {
+    text-align: center;
+    border-radius: 5%;
+    background-color: rgb(233, 239, 240);
+    padding-left: 5%;
+    margin-left: 25%;
+    border-color: rgb(59, 128, 128);
+    border-style: inherit;
+    color: black;
+}
+
+#crd1 {
+    border: solid;
+    border-style: groove;
+    border-radius: 1%;
+    border-color: rgb(245, 230, 199);
+}
+
+#cnt1Plan {
+    border-radius: 15%;
+}
+
+@media (min-width: 600px) and (max-width:992px) {
+    #dvPlan3 {
+        min-width: 100%
+    }
+}
+
+footer {
+    background-color: rgba(255,150,6,1) !important;
+}
+
+#waves-effect {
+    text-align: center;
+    background-color: black;
+}
+
+#btnPlani {
+    text-align: center !important;
+    border-radius: 5%;
+    background-color: rgb(80, 211, 235);
+    color: rgb(255, 255, 255);
+    padding-left: 5%;
+    margin-left: 30%;
+}
+
+#crd2 {
+    border: solid;
+    border-style: groove;
+    border-radius: 1%;
+    border-color: rgb(74, 208, 241);
+    border-style: solid;
+}
+
+.hrPlan {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 100%;
+}
+
+#hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+#dvSusc {
+    min-height: 100vh;
+}
+
+
+/*
+*! Fin  Suscripciones
+*/
